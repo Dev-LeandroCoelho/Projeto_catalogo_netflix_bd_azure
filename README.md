@@ -1,11 +1,50 @@
-# Azure Functions
+Azure Functions
+Description
+This repository provides examples of how to implement a Serverless application using Azure Functions v3, .NET Core 3, and Azure Storage. It demonstrates key concepts and best practices for building scalable, event-driven applications in a serverless architecture.
 
-## Description / Descrição
-[EN] This repository contain example on how to implement an Serverless application using Azure Functions v3, .NET Core 3 and Azure Storage.
+How to Run
+To run the project locally:
 
-[PT] Este repositório contém exemplo sobre como implementar uma aplicação Serverless utilizando o Azure Functions, Azure Functions v3, .NET Core 3 e o Azure Storage.
+Create a local.settings.json file in the root directory.
 
-## How to run / Como executar
-[EN] You can create a local.settings.json file and create the connection strings AzureWebJobsStorage and AzureWebJobsDashboard and place your connection string with Azure Storage or you can publish it directly to Azure.
+Add the following connection strings to the file:
 
-[PT] Você pode criar um arquivo local.settings.json e criar as connections strings AzureWebJobsStorage e AzureWebJobsDashboard e colocar sua string de conexão com o Azure Storage ou você pode publicar diretamente no Azure.
+json
+Copy
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "<Your_Azure_Storage_Connection_String>",
+    "AzureWebJobsDashboard": "<Your_Azure_Storage_Connection_String>"
+  }
+}
+Replace <Your_Azure_Storage_Connection_String> with your actual Azure Storage connection string.
+
+Alternatively, you can publish the project directly to Azure for deployment in the cloud.
+
+Versão em Português:
+Azure Functions
+Descrição
+Este repositório contém exemplos de como implementar uma aplicação Serverless utilizando Azure Functions v3, .NET Core 3 e Azure Storage. Ele demonstra conceitos-chave e boas práticas para a construção de aplicações escaláveis e orientadas a eventos em uma arquitetura serverless.
+
+Como Executar
+Para executar o projeto localmente:
+
+Crie um arquivo local.settings.json na raiz do projeto.
+
+Adicione as seguintes connection strings ao arquivo:
+
+json
+Copy
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "<Sua_Connection_String_do_Azure_Storage>",
+    "AzureWebJobsDashboard": "<Sua_Connection_String_do_Azure_Storage>"
+  }
+}
+Substitua <Sua_Connection_String_do_Azure_Storage> pela sua connection string do Azure Storage.
+
+Como alternativa, você pode publicar o projeto diretamente no Azure para implantação na nuvem.
+
+Este projeto é licenciado sob a Licença MIT. Veja o arquivo LICENSE para detalhes.
