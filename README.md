@@ -1,23 +1,23 @@
-Azure Functions
-Description
-This repository provides examples of how to implement a Serverless application using Azure Functions v3, .NET Core 3, and Azure Storage. It demonstrates key concepts and best practices for building scalable, event-driven applications in a serverless architecture.
+# Azure Functions
 
-How to Run
-To run the project locally:
+## Descrição
+Este repositório contém exemplos de como implementar uma aplicação Serverless utilizando Azure Functions v3, .NET Core 3 e Azure Storage. Ele demonstra conceitos-chave e boas práticas para a construção de aplicações escaláveis e orientadas a eventos em uma arquitetura serverless.
 
-Create a local.settings.json file in the root directory.
+## Como Executar
 
-Add the following connection strings to the file:
+### Localmente
+1. Crie um arquivo `local.settings.json` na raiz do projeto.
+2. Adicione as seguintes connection strings ao arquivo:
 
-json
-Copy
+```json
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "<Your_Azure_Storage_Connection_String>",
-    "AzureWebJobsDashboard": "<Your_Azure_Storage_Connection_String>"
+    "AzureWebJobsStorage": "<Sua_Connection_String_do_Azure_Storage>",
+    "AzureWebJobsDashboard": "<Sua_Connection_String_do_Azure_Storage>"
   }
 }
+
 Replace <Your_Azure_Storage_Connection_String> with your actual Azure Storage connection string.
 
 Alternatively, you can publish the project directly to Azure for deployment in the cloud.
